@@ -1,0 +1,150 @@
+/* About.css */
+
+/* General styles for the about section */
+.about {
+  padding: 100px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  background-color: var(--bg-color);
+  height: 100vh;
+}
+
+/* Left side section containing the profile image and title */
+.about-left {
+  background-color: black;
+  border: 10px solid black;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0px 0px 25px rgba(13, 160, 223, 0.5);
+}
+
+.about-left img {
+  width: 300px;
+  height:300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.about-left h2 {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(270deg, rgb(0, 255, 128) 10%, rgb(0, 204, 255)) text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Right side section containing text and social links */
+.about-right {
+  padding: 0 50px;
+  line-height: 30px;
+  color: var(--text-color);
+  max-width: 60%;
+}
+
+.about-right h1 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 35px;
+  text-transform: uppercase;
+
+  background: linear-gradient(90deg, #00c6ff, #0072ff, #6a11cb, #2575fc); /* Cool Blue & Purple Gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-right p {
+  font-size: 18px;
+  color:var(--text-color);
+}
+
+/* Styling the social media links section */
+.social-links ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.social-links ul li {
+  margin-right: 20px;
+}
+
+.social-links ul li a {
+  font-size: 30px;
+  color: #0077b5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links ul li a:hover {
+  color: #ff6347; /* Change color on hover */
+}
+
+/* Mobile styles */
+@media (max-width: 1160px) {
+  .about {
+    padding: 500px 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-left {
+    margin-bottom: 10px;
+  }
+
+  .about-left img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-right {
+    padding: 20px;
+    text-align: center;
+    max-width: 80%;
+  }
+
+  .about-right h1 {
+    font-size: 28px;
+  }
+
+  .about-right p {
+    font-size: 16px;
+  }
+
+  .social-links ul {
+    justify-content: center;
+  }
+
+  .social-links ul li {
+    margin-right: 15px;
+  }
+}
+
+
+
+@media (max-width: 490px) {
+  .about {
+    padding: 550px 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-right{
+   max-width: 100%;
+  }
+
+  .about-right p {
+    font-size: 15px;
+  }
+
+
+}

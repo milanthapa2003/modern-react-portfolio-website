@@ -1,0 +1,109 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--nav-bg);
+    color: var(--text-color);
+  
+  }
+  
+  .logo a {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  
+  .nav-menue ul {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-menue ul li {
+    list-style: none;
+  }
+  
+  .nav-menue ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.15s ease-in-out;
+  }
+  
+  .contact-btn a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .theme-toggle {
+    cursor: pointer;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  /* Active link styling */
+  .nav-menue ul li a.active {
+    font-weight: bold;
+    color: dodgerblue;
+    position: relative;
+  }
+  
+  .nav-menue ul li a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: dodgerblue;
+    border-radius: 2px;
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 1160px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .navbar {
+      padding: 15px 50px;
+    }
+
+    .logo a{
+      font-size: 35px;
+    }
+  
+    .nav-menue {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      background-color: var(--bg-color);
+      box-shadow: 0 0 15px rgba(13, 202, 215, 0.5);
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  
+    .nav-menue.open {
+      display: flex;
+    }
+  
+    .nav-menue ul {
+      flex-direction: column;
+    }
+  }
+  

@@ -1,0 +1,189 @@
+.contact {
+  padding: 180px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.contact h1 {
+  margin-bottom: 50px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff, #6a11cb, #2575fc); /* Cool Blue & Purple Gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.input input {
+  width: 100%;
+  padding: 15px;
+  background-color: #ebecfe;
+  border: none;
+  outline: none;
+  font-family: "poppins", sans-serif;
+  font-size: 16px;
+  border: none;
+  color: #676767;
+}
+
+textarea {
+  width: 100% !important;
+  height: 150px; /* Adjusted for better usability */
+  background-color: #ebecfe;
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #676767;
+  resize: vertical; /* Allows users to resize if needed */
+  border-radius: 5px; /* Optional for smooth edges */
+}
+
+.contact-left {
+  width: 40%;
+}
+
+.contact-left h1 {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(270deg, rgb(0, 255, 128) 10%, rgb(0, 204, 255))
+    text;
+}
+.contact-left h1,
+p {
+  margin-bottom: 20px;
+}
+
+.contact-left .social ul li {
+  list-style: none;
+  line-height: 30px;
+}
+
+.contact-right {
+  width: 60%;
+}
+
+.icon {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.submit-btn {
+  margin-left: 20px;
+  color:white;
+}
+
+.submit-icon {
+  margin-left: 10px;
+}
+
+@media (max-width: 1160px) {
+
+
+    .contact {
+        padding: 150px 10px ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+      }
+      
+      .contact h1 {
+        margin-bottom: 50px;
+      }
+      
+      .contact-container {
+        display: flex;
+        flex-direction: column;
+     
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      .input {
+    
+        padding: 10px;
+        border-radius: 10px;
+      }
+      
+      .input input {
+        width: 100%;
+        padding: 15px;
+        background-color: #ebecfe;
+        border: none;
+        outline: none;
+        font-family: "poppins", sans-serif;
+        font-size: 16px;
+        border: none;
+        color: #676767;
+      }
+      
+      textarea {
+        width: 100% !important;
+        height: 150px; /* Adjusted for better usability */
+        background-color: #ebecfe;
+        outline: none;
+        border: none;
+        padding: 10px;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        color: #676767;
+        resize: vertical; /* Allows users to resize if needed */
+        border-radius: 5px; /* Optional for smooth edges */
+      }
+      
+      .contact-left {
+        width: 100%;
+        order: 2;
+      }
+      
+      .contact-left h1 {
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(270deg, rgb(0, 255, 128) 10%, rgb(0, 204, 255))
+          text;
+      }
+      .contact-left h1,
+      p {
+        margin-bottom: 20px;
+      }
+      
+      .contact-left .social ul li {
+        list-style: none;
+        line-height: 30px;
+      }
+      
+      .contact-right {
+        width: 100%;
+        
+      }
+      
+      .icon {
+        margin-right: 10px;
+        color: #007bff;
+      }
+      
+      .submit-btn {
+        margin-left: 20px;
+        color: var(--text-color);
+      }
+      
+      .submit-icon {
+        margin-left: 10px;
+      }
+      
+}

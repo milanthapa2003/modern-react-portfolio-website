@@ -1,0 +1,110 @@
+.hero {
+
+  width: 100%;
+  height: auto;
+  padding: 100px 50px;
+  z-index: 99;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 118px 0;
+}
+
+.profile-image {
+  margin-bottom: 20px;
+  background-color:black;
+  border: 5px solid black;
+  border-radius: 50%;
+  box-shadow: 1px 1px 15px rgba(56, 206, 216, 0.5);
+}
+
+.profile-image img {
+  height: 400px;
+  width: 400px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.profile-info h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.profile-info h1 span {
+  background: linear-gradient(270deg, rgb(0, 255, 128) 10%, rgb(0, 204, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mybtn {
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+  transition: opacity 0.3s ease;
+}
+.hire-btn a{
+  text-decoration: none;
+
+  color:white;
+
+}
+.hire-btn {
+  background-color: rgb(25, 164, 99);
+  border: 1px solid rgb(25, 164, 99);
+ 
+}
+
+
+
+
+
+.resume-btn {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  text-decoration: none;
+}
+
+.hire-btn:hover,
+.resume-btn:hover {
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 450px) {
+  .hero {
+    height: auto;
+    padding: 100px 20px;
+  }
+
+  .profile-image img {
+    height: 290px;
+    width: 290px;
+  }
+
+  .profile-info h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
