@@ -1,6 +1,6 @@
 import milanedu from './assets/milanedu.png';
 import milanhamrocsit from './assets/milanhamrocsit.png';
-import Portfoliowebsite from './assets/Portfoliowebsite.png';
+import Portfoliowebsite from './assets/react-portfolio.png';
 import milanecommerce from './assets/milanecommerce.png';
 
 
